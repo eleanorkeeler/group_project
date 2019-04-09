@@ -1,74 +1,123 @@
-
-
-body {
-	margin: 0;
-	background:white;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 800;
+html {
+  scroll-behavior: smooth;
 }
 
-.container {
-	width: 80%;
-	margin: 0 auto;
+body{
+	padding-top: 5%;
+	text-align: center;
+  background-color: gray;
 }
-
-header {
-  background: #55d6aa;
+.padding::before {
+  height: 50px;
+  display:block;
+  content:"";
 }
+.apple{
+  font-size: 30px;
 
-header::after {
-  content: '';
-  display: table;
-  clear: both;
 }
-
-.logo {
-  float: left;
-  padding: 10px 0;
+.text{
+  font-size: 50px;
 }
-
-nav {
-  float: right;
+.nav {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
-
-nav ul {
+ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style: none;
+  overflow: hidden;
+  background-color: #333;
 }
 
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-
-  position: relative;
+li {
+  float: left;
+  width: 12.5%;
 }
 
-nav a {
-  color: #444;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: '';
+li a {
   display: block;
-  height: 5px;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
 }
 
-nav a:hover::before {
+li a:hover {
+  background-color: #111;
+}
+
+.container-fluid {
+  padding: 40px 50px;
+}
+
+img {
   width: 100%;
 }
+
+h2 {
+  font-style: italic;
+}
+
+.links{
+  font-size: 80px;
+}
+
+.row {
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  height: 300px;
+  background-size: contain;
+  color: white;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  body {
+  	margin: 0;
+  	background: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+  }
+
+  .container {
+  	width: 80%;
+  	margin: 0 auto;
+  }
+
+  .fa {
+    padding: 150px;
+    font-size: 150px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #55ACEE;
+    color: white;
+  }
