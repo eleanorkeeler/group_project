@@ -7,7 +7,18 @@ body{
 	text-align: center;
   background-color: gray;
 }
+.padding::before {
+  height: 50px;
+  display:block;
+  content:"";
+}
+.apple{
+  font-size: 30px;
 
+}
+.text{
+  font-size: 50px;
+}
 .nav {
 	overflow: hidden;
 	background-color: #333;
